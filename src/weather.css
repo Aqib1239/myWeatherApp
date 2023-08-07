@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.app {
+  background-image: url('./images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.app.warm {
+  filter: brightness(70%);
+  background-image: url('./images/warm.jpg');
+  background-position: center;
+}
+
+.app.cold {
+  background-image: url('./images/cold.jpg');
+  background-position: center;
+}
+
+.group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 28px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  max-width: 190px;
+}
+
+.search-box {
+  margin: 0 10px;
+}
+
+.search-bar {
+  height: 40px;
+  line-height: 28px;
+  padding: 0 1rem;
+  width: 100%;
+  padding-left: 2rem;
+  font-family: cursive;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  outline: none;
+  background-color: rgba(100, 250, 222, 0.654);
+  color: #0d0c22;
+  /* -webkit-box-shadow: 10px 5px 5px #41e133, 0px 10px 10px 10px #800e0eeb; */
+  box-shadow: 0px 5px 5px #c382fc, 0px 8px 8px 8px #dfd5d5eb;
+  /* -webkit-transition: .3s ease; */
+  transition: .4s ease;
+}
+
+.search-box .search-bar:focus {
+  background-color: #f1f5de;
+}
+
+ ::placeholder{
+  color: #000;
+  font-size: 1.1rem;
+}
+
+.location-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 7rem;
+}
+
+.location {
+  font-weight: 700;
+  font-size: 2.5rem;
+  font-style: italic;
+}
+
+.date {
+  font-family: cursive;
+  font-style: italic;
+  font-size: 1.2rem;
+  /* color: #f5f6fa; */
+}
+
+.weather-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.temp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  border-radius: 3rem;
+  padding: 2rem 4rem;
+  font-size: 4.5rem;
+  font-style: italic;
+  backdrop-filter: blur(10px);
+  box-shadow: 5px 5px 5px #6ecf6e;
+}
+
+.temp span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7rem;
+  font-style: italic;
+}
+
+.temp .humidity {
+  padding-top: 1rem;
+  font-size: 1rem;
+  font-style: italic;
+  display: flex;
+  
+}
